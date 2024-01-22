@@ -3,7 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://un-t-kamihara.github.com/google-crawl-testing",
   "scripts": {
+    "deploy": "npm run build && gh-pages -d build -m \"Updates --skip-ci\"",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
@@ -15,6 +17,7 @@
   "devDependencies": {
     "@biomejs/biome": "^1.5.2",
     "@preact/preset-vite": "^2.7.0",
+    "gh-pages": "^6.1.1",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
   }
