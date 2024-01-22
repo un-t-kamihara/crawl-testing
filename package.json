@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://un-t-kamihara.github.com/google-crawl-testing",
+  "homepage": "https://un-t-kamihara.github.com/crawl-testing",
   "scripts": {
     "deploy": "npm run build && gh-pages -d dist -m \"Updates --skip-ci\"",
     "dev": "vite",
