@@ -9,7 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "preact": "^10.19.3"
+    "preact": "^10.19.3",
+    "react-router-dom": "^6.21.3"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.5.2",

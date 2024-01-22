@@ -1,5 +1,17 @@
-import { render } from 'preact'
-import { App } from './app.tsx'
-import './index.css'
+import { render } from "preact/compat";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./index.css";
 
-render(<App />, document.getElementById('app')!)
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <div>Hello world!</div>,
+	},
+	{
+		path: "/lower",
+		element: <div>Hello from lower.</div>,
+	},
+]);
+
+// biome-ignore lint/style/noNonNullAssertion: <explanation>
+render(<RouterProvider router={router} />, document.getElementById("app")!);
